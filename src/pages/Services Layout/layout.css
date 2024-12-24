@@ -229,7 +229,7 @@ article div.result {
 
     article {
         width: 100%;
-        padding: 0 1.5rem;
+        padding: 16px 1.5rem;
     }
 
     .sidebar.open~article {

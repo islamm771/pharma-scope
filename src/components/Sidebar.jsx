@@ -160,7 +160,7 @@ const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
                         <span>Food Interaction</span>
                     </NavLink>
                 </li>
-                <li>
+                {/* <li>
                     <NavLink to="/services/calculator">
                         <span>
                             <svg width="32" height="32" viewBox="0 0 32 32"
@@ -238,7 +238,7 @@ const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
                             Calculator
                         </span>
                     </NavLink>
-                </li>
+                </li> */}
                 <li>
                     <NavLink to="/services/podcast">
                         <span>
