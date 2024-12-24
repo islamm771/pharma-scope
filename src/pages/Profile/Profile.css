@@ -1,0 +1,72 @@
+.profile nav {
+    margin-bottom: 3rem;
+}
+
+.profile nav p {
+    color: #6F6F6F;
+}
+
+
+.profile>div {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+
+.profile .top {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(326.42deg, #0096EA 10.57%, #00D1FF 154.06%);
+    border-radius: 10px 10px 0 0;
+}
+
+.profile .user {
+    margin-bottom: 5rem;
+    padding: 15px;
+}
+
+.user-img {
+    width: 80px;
+    height: 80px;
+}
+
+.user-details h5 {
+    margin-bottom: 0px;
+}
+
+.user-details p {
+    color: #6F6F6F;
+    margin: 0;
+}
+
+.profile .form {
+    padding: 0 15px 30px;
+}
+
+.profile .form .row {
+    row-gap: 40px;
+}
+
+.input-cont {
+    position: relative;
+}
+
+.input-cont label {
+    position: absolute;
+    background-color: #fff;
+    color: #165AB3;
+    font-weight: 700;
+    font-size: 14px;
+    top: -12px;
+    left: 20px;
+}
+
+.input-cont input {
+    /* color: #A9A9A9; */
+    width: 100%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px #A9A9A9 solid;
+    outline: none;
+    padding: 12px 0 12px 20px;
+}

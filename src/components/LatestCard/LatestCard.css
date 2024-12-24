@@ -1,0 +1,20 @@
+.latest-card {
+    box-shadow: 22px 36px 34px -9px #cae1ea6b;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.latest-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.latest-card .card-details {
+    padding: 1rem 0 0 0;
+}
+
+.latest-card .card-details h5 {
+    font-weight: 600;
+}
