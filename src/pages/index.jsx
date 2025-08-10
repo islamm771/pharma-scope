@@ -1,7 +1,6 @@
-import React from 'react'
-import '@splidejs/react-splide/css';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import '@splidejs/react-splide/css';
+import { Link } from 'react-router-dom';
 import ArticleCard from '../components/ArticleCard/ArticleCard';
 import LatestCard from '../components/LatestCard/LatestCard';
 
@@ -31,7 +30,7 @@ const Index = () => {
 
             <div className="about">
                 <div className="container">
-                    <h3 className="text-center">About <span>MedWord</span></h3>
+                    <h3 className="text-center">About <span>Pharma Scope</span></h3>
                     <p className="text-black-50 text-center">
                         Lorem Ipsum is simply dummy text of the printing and typesetting
                         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -413,9 +412,9 @@ const Index = () => {
                                             fill="#0080FF" />
                                     </svg>
                                 </div>
-                                <a href="./drug_interactions.html">
+                                <Link to="/services/drug_interactions">
                                     Drug Interaction
-                                </a>
+                                </Link>
                             </div>
                         </SplideSlide>
                         <SplideSlide className="splide__slide">
@@ -530,7 +529,7 @@ const Index = () => {
                                             fill="#074E95" />
                                     </svg>
                                 </div>
-                                <a href="./drug_id.html"> Drug I.D. </a>
+                                <Link to="/services/drug_id"> Drug I.D. </Link>
                             </div>
                         </SplideSlide>
                         <SplideSlide className="splide__slide">
@@ -582,7 +581,7 @@ const Index = () => {
                                         </defs>
                                     </svg>
                                 </div>
-                                <a href="./food_interactions.html"> Food Interactions </a>
+                                <Link to="/services/food_interactions"> Food Interactions </Link>
                             </div>
 
                             {/* <svg width="329" height="425" viewBox="0 0 329 425" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -664,10 +663,10 @@ const Index = () => {
                                         </defs>
                                     </svg>
                                 </div>
-                                <a href="./articles.html"> Cases </a>
+                                <Link to="/cases"> Cases </Link>
                             </div>
                         </SplideSlide>
-                        <SplideSlide className="splide__slide">
+                        {/* <SplideSlide className="splide__slide">
                             <div className="service service-podcast">
                                 <div className="text-center">
                                     <svg
@@ -706,7 +705,7 @@ const Index = () => {
                                 </div>
                                 <a href="./podcast.html"> Podcast </a>
                             </div>
-                        </SplideSlide>
+                        </SplideSlide> */}
                     </Splide>
                 </div>
             </div>

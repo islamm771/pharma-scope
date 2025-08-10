@@ -72,20 +72,6 @@
     cursor: pointer;
 }
 
-.drug-interactions .result h3 {
-    font-weight: 500;
-}
-
-.drug-interactions .result h3 span {
-    color: #0096EA;
-}
-
-.drug-interactions .result>div {
-    padding: 2rem;
-    border: 1.24px solid #E6EBED;
-    border-radius: 19.88px;
-}
-
 .toggle-nav {
     background: linear-gradient(326.42deg, #0096EA 10.57%, #00D1FF 154.06%);
     color: white;

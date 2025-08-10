@@ -1,4 +1,3 @@
-import React from 'react'
 import "./FoodInteractions.css"
 
 const FoodInteractions = () => {
@@ -42,8 +41,19 @@ const FoodInteractions = () => {
                 </section>
             </div>
 
-            <div className="result">
-
+            <div className="result text-center p-4">
+                <h3 className="mb-4">
+                    <span>3</span> result for Food interactions!
+                </h3>
+                <div>
+                    <h3>Title</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Error quo corporis iste beatae tempore
+                        voluptatum tempora, porro distinctio deserunt
+                        eligendi consequuntur cupiditate molestias aperiam
+                        sit impedit deleniti commodi necessitatibus
+                        dolor!</p>
+                </div>
             </div>
         </article>
     )

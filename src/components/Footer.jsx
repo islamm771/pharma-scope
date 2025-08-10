@@ -1,5 +1,5 @@
-import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { Link } from "react-router-dom"
 
 const Footer = () => {
     return (
@@ -43,15 +43,22 @@ const Footer = () => {
                         <h5>Menu</h5>
                         <ul className="list-unstyled menu">
                             <li>
-                                <a className="text-decoration-none text-white-50" href="#">Home</a>
+                                <Link className="text-decoration-none text-white-50" to={"/"}>Home</Link>
                             </li>
                             <li>
-                                <a className="text-decoration-none text-white-50"
-                                    href="#">Interactions</a>
+                                <Link to={"/services/drug_id"} className="text-decoration-none text-white-50">
+                                    Drug I.D.
+                                </Link>
                             </li>
                             <li>
-                                <a className="text-decoration-none text-white-50" href="#">Drug
-                                    I.D.</a>
+                                <Link to={"/services/drug_interactions"} className="text-decoration-none text-white-50">
+                                    Drug Interactions
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to={"/services/food_interactions"} className="text-decoration-none text-white-50">
+                                    Food Interactions
+                                </Link>
                             </li>
                         </ul>
                     </div>

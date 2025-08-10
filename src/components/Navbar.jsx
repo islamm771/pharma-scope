@@ -1,4 +1,3 @@
-import React from 'react'
 import { FaBars } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
 
@@ -190,15 +189,15 @@ const Navbar = () => {
                         <li className="nav-item">
                             <NavLink className="nav-link" to="/services/drug_id">Drug I.D.</NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className="nav-link" to="/services/podcast">Podcast</Link>
-                        </li>
+                        </li> */}
                     </ul>
 
-                    <div className="auth">
+                    {/* <div className="auth">
                         <Link to="/login">Sign in</Link>
                         <Link className="sign-up" to="/register">Sign up</Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </nav>

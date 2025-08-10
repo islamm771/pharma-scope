@@ -80,7 +80,8 @@ main {
     opacity: 1;
 }
 
-.sidebar ul li a:hover svg path {
+.sidebar ul li a:hover svg path,
+.sidebar ul li a.active svg path {
     fill: #023047;
 }
 
@@ -203,6 +204,21 @@ article div.result {
     background-color: #fff;
     margin-top: 15px;
     border-radius: 10px;
+}
+
+article div.result h3 {
+    font-weight: 500;
+}
+
+article div.result h3 span {
+    color: #0096EA;
+}
+
+
+article div.result>div {
+    padding: 2rem;
+    border: 1.24px solid #E6EBED;
+    border-radius: 19.88px;
 }
 
 @media (width <=767px) {

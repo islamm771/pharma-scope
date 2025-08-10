@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
-import "./DrugInteractions.css"
+import { useState } from 'react';
 import { FaCheck } from 'react-icons/fa';
+import "./DrugInteractions.css";
 // import { Button, Modal } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -80,7 +80,7 @@ const DrugInteractions = () => {
                         </form>
                     </section>
                 </div>
-                <div className="result text-center  p-4">
+                <div className="result text-center p-4">
                     <h3 className="mb-4">
                         <span>3</span> result for Drug interactions!
                     </h3>

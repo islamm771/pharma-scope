@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import { FaArrowLeft, FaBars } from 'react-icons/fa'
 import { FaX } from 'react-icons/fa6'
 import { Link, NavLink } from 'react-router-dom'
 
 const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
-    const [isAsideOpen, setIsAsideOpen] = useState(false)
+    // const [isAsideOpen, setIsAsideOpen] = useState(false)
 
     const asideRef = useRef(null);
 
@@ -14,6 +14,7 @@ const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
     const handleClicOutside = (e) => {
         if (asideRef.current && asideRef.current !== e.target) {
             handleCloseAside();
+            console.log("object");
         }
     };
 
@@ -25,12 +26,12 @@ const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
         };
     }, []);
     return (
-        <aside className={`sidebar ${isAsideOpen ? 'open' : ''} ${!isAsideShow ? 'close' : ''}`} ref={asideRef}>
+        <aside className={`sidebar ${isAsideShow ? 'open' : 'close'} `} ref={asideRef}>
             <Link to="/" className="logo">
                 <img className="img-fluid" src="/img/logo 2.png" alt={""} />
             </Link>
 
-            <button className="back" onClick={() => setIsAsideOpen(prev => !prev)}>
+            <button className="back" onClick={() => setIsAsideShow(prev => !prev)}>
                 <FaBars className='bars' />
                 <FaArrowLeft className='arrow d-none' />
             </button>
@@ -239,7 +240,7 @@ const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
                         </span>
                     </NavLink>
                 </li> */}
-                <li>
+                {/* <li>
                     <NavLink to="/services/podcast">
                         <span>
                             <svg width="32" height="32" viewBox="0 0 32 32"
@@ -263,7 +264,7 @@ const Sidebar = ({ isAsideShow, setIsAsideShow }) => {
                             Podcast
                         </span>
                     </NavLink>
-                </li>
+                </li> */}
                 <li>
                     <NavLink to="/account">
                         <span>
